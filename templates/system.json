@@ -1,0 +1,17 @@
+{
+  "_id": "{{@ system @}}",
+  "headers": {
+    "Authorization": "Bearer $SECRET(api_key)"
+  },
+  "operations": {
+    "products-list": {
+      "id_expression": "{{ id }}",
+      "method": "GET",
+      "payload_property": "products",
+      "url": "1.0/commerce/products"
+    }
+  },
+  "type": "system:rest",
+  "url_pattern": "https://api.squarespace.com/%s",
+  "verify_ssl": true
+}
